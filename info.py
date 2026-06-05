@@ -77,10 +77,10 @@ QR_CODE_IMAGE = environ.get("QR_CODE_IMAGE", "")
 # =========================================================
 # 🖼️ IMAGES
 # =========================================================
-START_PIC = environ.get("START_PIC", "")
-AUTH_PICS = environ.get("AUTH_PICS", "")
-VERIFY_IMG = environ.get("VERIFY_IMG", "")
-NO_IMG = environ.get("NO_IMG", "")
+START_PIC = environ.get("START_PIC", "https://graph.org/file/681c4aec0905e108a3da1-030394aef130e14eba.jpg")
+AUTH_PICS = environ.get("AUTH_PICS", "https://graph.org/file/681c4aec0905e108a3da1-030394aef130e14eba.jpg")
+VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/681c4aec0905e108a3da1-030394aef130e14eba.jpg")
+NO_IMG = environ.get("NO_IMG", "https://graph.org/file/681c4aec0905e108a3da1-030394aef130e14eba.jpg")
 
 # =========================================================
 # 🌐 WEB APP
