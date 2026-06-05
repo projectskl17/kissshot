@@ -1,4 +1,4 @@
-Pyrofork==2.3.48
+Pyrofork
 tgcrypto
 pytz
 aiohttp
@@ -8,3 +8,4 @@ python-dotenv
 shortzy
 apscheduler
 ffmpeg
+git+https://github.com/ps-updates/pyrogram
