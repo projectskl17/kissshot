@@ -15,15 +15,15 @@ def str_to_bool(val, default=False):
 API_ID = int(environ.get("API_ID", "0"))
 API_HASH = environ.get("API_HASH", "")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-PORT = int(environ.get("PORT", "8080"))
+PORT = int(environ.get("PORT", "8011"))
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "BOT_OWNER26")
 
 # =========================================================
 # 💾 DATABASE CONFIGURATION
 # =========================================================
-DB_URL = environ.get("DATABASE_URI", "")
-DB_NAME = environ.get("DATABASE_NAME", "testing")
+DB_URL = environ.get("DATABASE_URI", "mongodb+srv://ksb1:ksb1@cluster0.wi4snno.mongodb.net/?appName=Cluster0")
+DB_NAME = environ.get("DATABASE_NAME", "ksb1")
 
 # =========================================================
 # 📢 CHANNELS & ADMINS
