@@ -12,9 +12,9 @@ def str_to_bool(val, default=False):
 # =========================================================
 # 🤖 BOT BASIC INFORMATION
 # =========================================================
-API_ID = int(environ.get("API_ID", "0"))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "21375775"))
+API_HASH = environ.get("API_HASH", "24a8567a7fa9209f79d4643b191c1ae4")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8609992751:AAEOw3WiozEHifyDRb6ek5HsVKVvQhg8d0I")
 PORT = int(environ.get("PORT", "8011"))
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "BOT_OWNER26")
