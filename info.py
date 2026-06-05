@@ -28,11 +28,11 @@ DB_NAME = environ.get("DATABASE_NAME", "ksb1")
 # =========================================================
 # 📢 CHANNELS & ADMINS
 # =========================================================
-ADMINS = int(environ.get("ADMINS", "0"))
+ADMINS = int(environ.get("ADMINS", "6561300746"))
 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "0"))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "0"))
-VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "0"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003987598694"))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1003987598694"))
+VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1003987598694"))
 
 POST_CHANNEL = int(environ.get("POST_CHANNEL", "0"))
 VIDEO_CHANNEL = int(environ.get("VIDEO_CHANNEL", "0"))
