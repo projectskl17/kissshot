@@ -14,7 +14,7 @@ def str_to_bool(val, default=False):
 # =========================================================
 API_ID = int(environ.get("API_ID", "21375775"))
 API_HASH = environ.get("API_HASH", "24a8567a7fa9209f79d4643b191c1ae4")
-BOT_TOKEN = environ.get("BOT_TOKEN", "8609992751:AAEOw3WiozEHifyDRb6ek5HsVKVvQhg8d0I")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8623963218:AAEPAIexMhD8Rc1DOiAtTNBOw3-yGqxNnwI")
 PORT = int(environ.get("PORT", "8011"))
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "BOT_OWNER26")
@@ -22,24 +22,30 @@ OWNER_USERNAME = environ.get("OWNER_USERNAME", "BOT_OWNER26")
 # =========================================================
 # 💾 DATABASE CONFIGURATION
 # =========================================================
-DB_URL = environ.get("DATABASE_URI", "mongodb+srv://ksb1:ksb1@cluster0.wi4snno.mongodb.net/?appName=Cluster0")
+DB_URL = environ.get("DATABASE_URI", "mongodb+srv://hermit:7-rKCT%40u3CeFGPz@cluster0.juugp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DATABASE_NAME", "ksb1")
 
 # =========================================================
 # 📢 CHANNELS & ADMINS
 # =========================================================
-ADMINS = int(environ.get("ADMINS", "6561300746"))
+ADMIN = int(environ.get("ADMINS", "6561300746"))
+from os import environ
 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003987598694"))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1003987598694"))
-VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1003987598694"))
+ADMINS = [
+    int(admin_id)
+    for admin_id in environ.get("ADMINS", "6561300746 1630507023").split()
+]
 
-POST_CHANNEL = int(environ.get("POST_CHANNEL", "-1003942937388"))
-VIDEO_CHANNEL = int(environ.get("VIDEO_CHANNEL", "-1002880421656"))
-BRAZZER_CHANNEL = int(environ.get("BRAZZER_CHANNEL", "-1002880421656"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003951996080"))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1003951996080"))
+VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1003951996080"))
+
+POST_CHANNEL = int(environ.get("POST_CHANNEL", "-1003951996080"))
+VIDEO_CHANNEL = int(environ.get("VIDEO_CHANNEL", "-1003951996080"))
+BRAZZER_CHANNEL = int(environ.get("BRAZZER_CHANNEL", "-1003951996080"))
 
 # Auth channels list
-auth_channel_str = environ.get("AUTH_CHANNEL", "-1003942528954")
+auth_channel_str = environ.get("AUTH_CHANNEL", "-1003951996080")
 AUTH_CHANNEL = [int(x) for x in auth_channel_str.split() if x.strip().lstrip("-").isdigit()]
 
 # =========================================================
@@ -54,8 +60,8 @@ PROTECT_CONTENT = str_to_bool(environ.get("PROTECT_CONTENT"), True)
 # =========================================================
 # 🔢 LIMITS
 # =========================================================
-DAILY_LIMIT = int(environ.get("DAILY_LIMIT", "15"))
-VERIFICATION_DAILY_LIMIT = int(environ.get("VERIFICATION_DAILY_LIMIT", "20"))
+DAILY_LIMIT = int(environ.get("DAILY_LIMIT", "150"))
+VERIFICATION_DAILY_LIMIT = int(environ.get("VERIFICATION_DAILY_LIMIT", "200"))
 PREMIUM_DAILY_LIMIT = int(environ.get("PREMIUM_DAILY_LIMIT", "50"))
 
 # =========================================================
